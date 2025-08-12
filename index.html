@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="The Rambling House Bar & Restaurant in Laghey, Donegal - A cosy pub and restaurant celebrating the flavours of Donegal with local ingredients, near beautiful beaches and golf courses.">
+    <meta name="keywords" content="Irish pub, restaurant, Laghey, Donegal, traditional food, live music, Irish cuisine, N15, local ingredients">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' http://127.0.0.1:8000 http://localhost:8000 https://theramblinghouse.ie; frame-src 'none'; object-src 'none';">
+    
+    <!-- Mobile optimizations -->
+    <meta name="theme-color" content="#1f4b5f">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Rambling House">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ramblinghouse.ie/">
+    <meta property="og:title" content="The Rambling House Bar & Restaurant - Laghey, Donegal">
+    <meta property="og:description" content="Experience authentic Irish hospitality, traditional cuisine, and live music in the heart of Donegal. Book your table today!">
+    <meta property="og:image" content="https://ramblinghouse.ie/assets/images/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ramblinghouse.ie/">
+    <meta property="twitter:title" content="The Rambling House Bar & Restaurant - Laghey, Donegal">
+    <meta property="twitter:description" content="Experience authentic Irish hospitality, traditional cuisine, and live music in the heart of Donegal. Book your table today!">
+    <meta property="twitter:image" content="https://ramblinghouse.ie/assets/images/logo.png">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "The Rambling House Bar & Restaurant",
+      "image": "https://ramblinghouse.ie/assets/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Laghey",
+        "addressLocality": "Donegal",
+        "postalCode": "F94 Y048",
+        "addressCountry": "IE"
+      },
+      "telephone": "+353 7497 40813",
+      "url": "https://ramblinghouse.ie",
+      "servesCuisine": "Irish",
+      "priceRange": "$$",
+      "openingHours": [
+        "Mo-Su 12:00-23:30"
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 54.6180,
+        "longitude": -8.1450
+      }
+    }
+    </script>
+    <title>The Rambling House Bar & Restaurant - Laghey, Donegal</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/menu-organized.css">
+    <link rel="stylesheet" href="styles/logo-fix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/reservation-form-fix.css">
+    <link rel="stylesheet" href="styles/reservation-beautiful-fix.css">
+    <link rel="stylesheet" href="styles/footer-professional-fix.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    
+    <!-- Email handling moved to backend SendGrid -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="assets/images/logo.png" alt="The Rambling House Bar & Restaurant" class="logo-img">
+            </a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#reservation" class="reservation-btn">Book a Table</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>
+                <div class="title-line"><span class="welcome-text">Welcome to</span></div>
+                <div class="title-line"><span class="rambling-text">The Rambling House</span></div>
+                <div class="title-line"><span class="bar-text">Bar & Restaurant</span></div>
+            </h1>
+            <p class="tagline">CEOL AGUS CRAIC | <span class="irish-text">Céad Míle Fáilte</span></p>
+            <p>Nestled in Laghey, Donegal, just off the N15! Experience authentic Irish hospitality, traditional cuisine, and live music in the heart of Donegal.</p>
+            <div class="location-badge">
+                <i class="fas fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/5Eb5gbt38fwb6cMdA" target="_blank" rel="noopener noreferrer">F94 Y048, Laghey, Donegal</a>
+            </div>
+            <a href="#reservation" class="cta-button">Book Your Table</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            
+            <div class="menu-tabs">
+                <button class="tab active" data-tab="main">Main Menu</button>
+                <button class="tab" data-tab="kids">Kids Menu</button>
+                <button class="tab" data-tab="takeaway">Takeaway</button>
+            </div>
+            
+            <!-- Main Restaurant Menu -->
+            <div id="main-menu" class="menu-content active">
+                
+                <!-- STARTERS -->
+                <div class="menu-category">
+                    <h3>STARTERS</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Homemade Soup of the Day</h4>
+                                <p>Seasonal Vegetables Soup served with a Side of Hearty Wheaten Bread</p>
+                            </div>
+                            <div class="item-price">€6.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Warm Chicken & Bacon Salad</h4>
+                                <p>Tender Chicken and Crispy Bacon served on a bed of baby gem lettuce, Parmesan shaving, Drizzled with Caesar Dressing & Cream Cheese Toasty</p>
+                            </div>
+                            <div class="item-price">€8.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Garlic Bread with Cheese</h4>
+                                <p>Served with Tossed Salad</p>
+                            </div>
+                            <div class="item-price">€7.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Wings to Fly</h4>
+                                <p>Louisiana Style BBQ and Maple Chicken Wings, Served with Mixed Leaves</p>
+                            </div>
+                            <div class="item-price">€8.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Rambling House Taco Beef</h4>
+                                <p>Spicy Prime Mince Beef served on a Tortilla Shell topped with Taco Mayonnaise and Gratinated Cheese</p>
+                            </div>
+                            <div class="item-price">€9.25</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Goat Cheese Tartlet</h4>
+                                <p>Roast Vegetables, Goat Cheese & Onion Marmalade, Drizzled with Basil Pesto and Roasted Red Pepper Coulis</p>
+                            </div>
+                            <div class="item-price">€9.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Duck Spring Rolls</h4>
+                                <p>Crispy Golden Spring Rolls filled with Tender Duck Breast, Sweet Chilli Stir-Fry Noodles</p>
+                            </div>
+                            <div class="item-price">€9.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Seafood Chowder</h4>
+                                <p>A Rich and Creamy Velouté with Prawn, Mussels, Clams, Hake, Salmon and Smoked Haddock. Simmered with Fresh Vegetables. Served with Wheaten Bread</p>
+                            </div>
+                            <div class="item-price">€9.50</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MAIN COURSES -->
+                <div class="menu-category">
+                    <h3>MAIN COURSES</h3>
+                    <div class="menu-items">
+                        <div class="menu-item featured">
+                            <div class="item-info">
+                                <h4>10oz Irish Sirloin Steak</h4>
+                                <p>10oz Irish Sirloin Steak, Served with Golden Crispy Chips, Sautéed Onions and Mushrooms, Creamy Peppercorn Sauce</p>
+                            </div>
+                            <div class="item-price">€31.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Signature Steak Sandwich</h4>
+                                <p>Grilled Sirloin Steak Slices on a Ciabatta Bread, Sauté Onion and Mushrooms melted Cheddar, Tomato and Pesto Ragout, Creamy Pepper Sauce Served with Fresh House Cut Fries</p>
+                            </div>
+                            <div class="item-price">€24.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Prawn and Monkfish</h4>
+                                <p>King Prawns and Monkfish infused in Garlic Butter topped with a White Wine Sauce and Cheddar Cheese served with Choice of Side</p>
+                            </div>
+                            <div class="item-price">€24.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Rambling House Flamed Grilled Burger</h4>
+                                <p>6oz Beef Burger, Crispy Bacon, Cheese, Lettuce, Tomato, Taco Mayonnaise, Onion Ring, Brioche Bap, Fresh House Cut Chips</p>
+                            </div>
+                            <div class="item-price">€18.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chicken and Mushrooms Tagliatelle</h4>
+                                <p>Creamy White Wine Sauce, Parmesan Shavings, Garlic Bread</p>
+                            </div>
+                            <div class="item-price">€18.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chicken Fillet</h4>
+                                <p>Chicken Fillet on a bed of Mashed Potato with a Rich Wild Mushroom Sauce</p>
+                            </div>
+                            <div class="item-price">€18.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chef's Special Chicken Curry</h4>
+                                <p>Tender Chicken Simmered in a Rich Aromatic Curry Sauce, served with rice and Fresh House Cut Fries. Tofu Curry Option Available</p>
+                            </div>
+                            <div class="item-price">€18.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Wild Atlantic Way Fish and Chips</h4>
+                                <p>Fresh Fillet of Haddock in a Crispy Beer Batter, Peas, Tartar Sauce & Fresh House Cut Fries</p>
+                            </div>
+                            <div class="item-price">€18.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cajun Chicken Burger</h4>
+                                <p>Crispy Cajun Coated Chicken Fillet, Cheese, Lettuce, Tomato, Coleslaw, Taco Mayonnaise & Onion Ring, Floury Bap, Fresh House Cut Fries</p>
+                            </div>
+                            <div class="item-price">€18.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chef's Special Roast of the Day</h4>
+                                <p>Ask Server</p>
+                            </div>
+                            <div class="item-price">€18.00</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PIZZAS -->
+                <div class="menu-category">
+                    <h3>FRESH STONE BAKED 12" PIZZA</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Margherita</h4>
+                                <p>Tomato Base with Mozzarella Cheese</p>
+                            </div>
+                            <div class="item-price">€13.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Vegetarian</h4>
+                                <p>Tomato base, mozzarella cheese, peppers, slow roast cherry tomato, mushroom, & onion</p>
+                            </div>
+                            <div class="item-price">€14.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Pepperoni</h4>
+                                <p>Tomato base, mozzarella cheese, Pepperoni</p>
+                            </div>
+                            <div class="item-price">€14.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Spicy Beef</h4>
+                                <p>Tomato base, mozzarella cheese, Spicy taco beef</p>
+                            </div>
+                            <div class="item-price">€14.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Rambling Pizza</h4>
+                                <p>Tomato base, mozzarella cheese, bbq chicken, bacon, mushroom, peppers, red onion</p>
+                            </div>
+                            <div class="item-price">€14.95</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- SIDES & SAUCES -->
+                <div class="menu-category">
+                    <h3>SIDES & SAUCES</h3>
+                    <div class="sides-grid">
+                        <div class="sides-section">
+                            <h4>LOADED FRESH HOUSE CUT FRIES</h4>
+                            <p class="side-note">Cut Fresh in Our Own In-House Chip Room</p>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Bacon & Cheese</h4>
+                                    </div>
+                                    <div class="item-price">€7.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Curry Sauce</h4>
+                                    </div>
+                                    <div class="item-price">€6.50</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Vegan Cheese</h4>
+                                    </div>
+                                    <div class="item-price">€6.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sides-section">
+                            <h4>SIDE ORDERS</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Fresh House Cut Fries</h4>
+                                    </div>
+                                    <div class="item-price">€3.95</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Creamy Potatoes</h4>
+                                    </div>
+                                    <div class="item-price">€3.95</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Roast Vegetables</h4>
+                                    </div>
+                                    <div class="item-price">€3.95</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sides-section">
+                            <h4>SAUCES</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Taco Mayonnaise</h4>
+                                    </div>
+                                    <div class="item-price">€1.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Garlic Mayonnaise</h4>
+                                    </div>
+                                    <div class="item-price">€1.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Pepper Sauce</h4>
+                                    </div>
+                                    <div class="item-price">€1.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kids Menu -->
+            <div id="kids-menu" class="menu-content">
+                <div class="menu-category">
+                    <h3>The Little Ramblers - KIDS MENU</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chicken Chunks</h4>
+                                <p>Served with Chips or Mash Potatoes</p>
+                            </div>
+                            <div class="item-price">€7.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chicken Goujon</h4>
+                                <p>Served with Chips or Mash Potatoes</p>
+                            </div>
+                            <div class="item-price">€7.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Sausages & Chips</h4>
+                                <p>Or Mash Potatoes</p>
+                            </div>
+                            <div class="item-price">€7.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Tagliatelle Pasta</h4>
+                                <p>Served with Tomato Sauce and Garlic Bread</p>
+                            </div>
+                            <div class="item-price">€7.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Beef Burger</h4>
+                                <p>Served with Chips or Mash</p>
+                            </div>
+                            <div class="item-price">€7.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Fish and Chips</h4>
+                                <p>Served with Chips or Mash</p>
+                            </div>
+                            <div class="item-price">€8.00</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>½ Roast Dinner</h4>
+                                <p>Served with Mash Potatoes and Roast Vegetables</p>
+                            </div>
+                            <div class="item-price">€8.50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Takeaway Menu -->
+            <div id="takeaway-menu" class="menu-content">
+                <div class="takeaway-header">
+                    <h3>Takeaway Menu</h3>
+                    <p class="contact-info">Tel: <a href="tel:+353749740813">+353 7497 40813</a> | Mob: <a href="tel:+353852533832">+353 85 253 3832</a></p>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>TAKEAWAY SPECIALTIES</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Classic Fresh Chicken Goujon</h4>
+                                <p>Tender Breaded Chicken, Garlic Mayonnaise</p>
+                            </div>
+                            <div class="item-price">€7.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Cajun Chicken Burger</h4>
+                                <p>Crispy Cajun Coated Chicken Fillet, Lettuce, Tomato, Coleslaw, Cheese, Taco Mayonnaise, Onion Ring, Floury Bap</p>
+                            </div>
+                            <div class="item-price">€9.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Salt and Chilli Chicken Noodle</h4>
+                                <p>Salt and Chilli Crispy Shredded Chicken Fillet, Stir Fry Vegetables & Noodles, Tossed in a Szechuan Sauce</p>
+                            </div>
+                            <div class="item-price">€10.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Chef's Special Chicken Curry</h4>
+                                <p>Tender Chicken Simmered in a Rich Aromatic Curry Sauce, Served with Rice</p>
+                            </div>
+                            <div class="item-price">€10.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Wild Atlantic Way Fish & Chips</h4>
+                                <p>Fresh Fillet of Haddock in a Crispy Beer Batter, Peas, Tartare Sauce and Fresh House Cut Fries</p>
+                            </div>
+                            <div class="item-price">€12.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Rambling House Flamed Grilled Burger</h4>
+                                <p>6oz Beef Burger, Crispy Bacon, Cheese, Lettuce, Tomato, Taco Mayonnaise, Onion Ring, Brioche Bap</p>
+                            </div>
+                            <div class="item-price">€9.95</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>TAKEAWAY PIZZA</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Margherita</h4>
+                                <p>Tomato Base with Mozzarella Cheese</p>
+                            </div>
+                            <div class="item-price">€12.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Vegetarian</h4>
+                                <p>Tomato Base, Mozzarella Cheese, Peppers, Slow Roast Cherry Tomato, Mushroom & Onion</p>
+                            </div>
+                            <div class="item-price">€14.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Pepperoni</h4>
+                                <p>Tomato Base, Mozzarella Cheese, Pepperoni</p>
+                            </div>
+                            <div class="item-price">€13.50</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Spicy Beef</h4>
+                                <p>Tomato Base, Mozzarella Cheese, Spicy Taco Beef</p>
+                            </div>
+                            <div class="item-price">€14.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Rambling Pizza</h4>
+                                <p>Tomato Base, Mozzarella Cheese, BBQ Chicken, Bacon, Mushroom, Peppers, Red Onion</p>
+                            </div>
+                            <div class="item-price">€14.95</div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-info">
+                                <h4>Extra Toppings</h4>
+                                <p>BBQ Chicken | Bacon | Ham | Pineapple | Mushroom | Red Onion | Pepperoni | Slow Roast Cherry Tomato | Goat cheese | Parmesan</p>
+                            </div>
+                            <div class="item-price">€1.20 each</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>TAKEAWAY SIDES & EXTRAS</h3>
+                    <div class="sides-grid">
+                        <div class="sides-section">
+                            <h4>SIDES</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Fresh House Cut Fries</h4>
+                                    </div>
+                                    <div class="item-price">€3.50</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Onion Rings</h4>
+                                    </div>
+                                    <div class="item-price">€3.50</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Coleslaw</h4>
+                                    </div>
+                                    <div class="item-price">€2.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="sides-section">
+                            <h4>SAUCES</h4>
+                            <div class="menu-items">
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Taco Mayonnaise</h4>
+                                    </div>
+                                    <div class="item-price">€1.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Garlic Mayonnaise</h4>
+                                    </div>
+                                    <div class="item-price">€1.00</div>
+                                </div>
+                                
+                                <div class="menu-item">
+                                    <div class="item-info">
+                                        <h4>Pepper Sauce</h4>
+                                    </div>
+                                    <div class="item-price">€1.00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>About The Rambling House Bar & Restaurant</h2>
+            <p>Established in 2024, The Rambling House Bar & Restaurant brings the warmth and charm of traditional Irish hospitality to Laghey, Donegal. Our cosy pub and restaurant celebrate the flavours of Donegal, with a menu showcasing local ingredients. Located just off the N15, we're close to breathtaking beaches and golf courses, making us the perfect stop for locals and visitors alike.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Local Flavours</h3>
+                    <p>Authentic Irish dishes made with locally sourced Donegal ingredients</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-music"></i>
+                    <h3>Live Music</h3>
+                    <p>Regular performances by local and visiting musicians</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Perfect Location</h3>
+                    <p>Close to beautiful beaches and golf courses in Donegal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <p class="gallery-intro">Take a virtual tour of The Rambling House and discover our warm atmosphere, delicious food, and beautiful surroundings.</p>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> The Rambling House Bar & Restaurant</p>
+                <p><a href="https://maps.app.goo.gl/5Eb5gbt38fwb6cMdA" target="_blank" rel="noopener noreferrer">Laghey, Donegal</a></p>
+                <p><a href="https://maps.app.goo.gl/5Eb5gbt38fwb6cMdA" target="_blank" rel="noopener noreferrer">F94 Y048</a></p>
+                <p><i class="fas fa-phone"></i> Tel: <a href="tel:+353749740813">+353 7497 40813</a></p>
+                <p><i class="fas fa-mobile-alt"></i> Mob: <a href="tel:+353852533832">+353 85 253 3832</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@theramblinghouse.ie">info@theramblinghouse.ie</a></p>
+                <div class="location-features">
+                    <p><i class="fas fa-road"></i> Just off the N15</p>
+                    <p><i class="fas fa-umbrella-beach"></i> Near beautiful beaches</p>
+                    <p><i class="fas fa-golf-ball"></i> Close to golf courses</p>
+                </div>
+            </div>
+            <div class="hours">
+                <h3>Opening Hours</h3>
+                <h4 class="hours-subheading">Bar - Open 7 Days</h4>
+                <p><i class="fas fa-beer"></i> Monday - Sunday: 12:00 PM - 11:30 PM</p>
+                
+                <h4 class="hours-subheading">Restaurant</h4>
+                <p><i class="fas fa-door-closed"></i> Monday: Bar Only (Restaurant Closed)</p>
+                <p><i class="fas fa-door-closed"></i> Tuesday: Bar Only (Restaurant Closed)</p>
+                <p><i class="fas fa-utensils"></i> Wednesday: 5:00 PM - 9:00 PM</p>
+                <p><i class="fas fa-utensils"></i> Thursday: 5:00 PM - 9:00 PM</p>
+                <p><i class="fas fa-utensils"></i> Friday: 5:00 PM - 9:00 PM</p>
+                <p><i class="fas fa-utensils"></i> Saturday: 1:00 PM - 9:00 PM</p>
+                <p><i class="fas fa-utensils"></i> Sunday: 1:00 PM - 8:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Book a Table</h2>
+            <form id="reservationForm" class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests *</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select...</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6">6 People</option>
+                            <option value="7">7 People</option>
+                            <option value="8">8 People</option>
+                            <option value="9">9 People</option>
+                            <option value="10">10 People</option>
+                            <option value="11+">More than 10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date *</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time *</label>
+                        <select id="time" name="time" required>
+                            <option value="">Select...</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                            <option value="22:00">10:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label for="occasion">Special Occasion (Optional)</label>
+                    <select id="occasion" name="occasion">
+                        <option value="">Select an occasion (if applicable)</option>
+                        <option value="Birthday">Birthday</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="Promotion">Promotion</option>
+                        <option value="Christmas Party">Christmas Party</option>
+                        <option value="Retirement">Retirement</option>
+                        <option value="Business Meeting">Business Meeting</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group full-width">
+                    <label for="specialRequests">Special Requests (Optional)</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special dietary requirements, seating preferences, or other requests..."></textarea>
+                </div>
+                <div class="consent-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I agree to the processing of my personal data for reservation purposes.</label>
+                </div>
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="login-modal" style="display: none;">
+        <div class="login-modal-content">
+            <span class="login-close" onclick="closeLoginModal()">&times;</span>
+            <h3>Staff Login</h3>
+            <form id="loginForm">
+                <div class="login-form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="login-form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <div id="loginError" class="login-error" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Management Section (Hidden by default) -->
+    <section class="admin-section" id="managementSection" style="display: none;">
+        <h3>Reservation Management</h3>
+        <div class="admin-controls">
+            <div class="admin-filters">
+                <input type="text" class="filter-input" id="searchInput" placeholder="Search reservations...">
+                <select class="filter-input" id="statusFilter">
+                    <option value="all">All Status</option>
+                    <option value="pending">Pending</option>
+                    <option value="confirmed">Confirmed</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+            </div>
+            <div class="admin-actions">
+                <button class="btn" onclick="forceRefreshReservations()"><i class="fas fa-sync"></i> Refresh</button>
+                <button class="btn" id="exportBtn">Export Data</button>
+                <button class="btn logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </div>
+        <div id="reservationsList">
+            <!-- Reservations will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-subscribe">
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="subscribe-form" id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="subscribe-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mcgrorysbarlaghey/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/theramblinghouselaghey/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Rambling House Bar & Restaurant. All rights reserved.</p>
+            <button onclick="showLoginModal()" class="admin-login-button" id="loginButton">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/static-auth.js?v=3"></script>
+
+            <script src="js/main.js?v=4"></script>
+    <script src="js/reservations.js"></script>
+    <script src="js/menu-organized.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html> 

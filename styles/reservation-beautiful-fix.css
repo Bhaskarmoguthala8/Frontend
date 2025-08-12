@@ -1,0 +1,547 @@
+/* ULTRA PROFESSIONAL RESERVATION SECTION - LUXURY DESIGN */
+
+/* Premium Section Layout */
+.reservation-section {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%, #0a0a0a 100%) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.reservation-section::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(199, 110, 46, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(31, 75, 63, 0.05) 0%, transparent 40%),
+        linear-gradient(45deg, transparent 48%, rgba(199, 110, 46, 0.02) 49%, rgba(199, 110, 46, 0.02) 51%, transparent 52%) !important;
+    pointer-events: none !important;
+    animation: subtle-shimmer 15s ease-in-out infinite !important;
+}
+
+.reservation-section::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1" fill="rgba(199, 110, 46, 0.1)"/></svg>') !important;
+    opacity: 0.3 !important;
+    pointer-events: none !important;
+}
+
+@keyframes subtle-shimmer {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+.reservation-section .container {
+    max-width: 650px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+    padding: 2rem 1rem !important;
+}
+
+/* Ultra Premium Section Title */
+.reservation-section h2 {
+    color: #ffffff !important;
+    text-align: center !important;
+    margin: 0 0 2.5rem 0 !important;
+    padding: 0 !important;
+    font-size: 4rem !important;
+    font-family: 'Cinzel', serif !important;
+    font-weight: 800 !important;
+    position: relative !important;
+    letter-spacing: 4px !important;
+    text-shadow: 
+        0 0 20px rgba(199, 110, 46, 0.5),
+        0 0 40px rgba(199, 110, 46, 0.3),
+        0 2px 8px rgba(0, 0, 0, 0.8) !important;
+    text-transform: uppercase !important;
+    background: linear-gradient(135deg, #ffffff 0%, #f0d5a0 50%, #c76e2e 100%) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    animation: title-glow 3s ease-in-out infinite alternate !important;
+}
+
+@keyframes title-glow {
+    0% { 
+        text-shadow: 
+            0 0 20px rgba(199, 110, 46, 0.5),
+            0 0 40px rgba(199, 110, 46, 0.3),
+            0 2px 8px rgba(0, 0, 0, 0.8);
+    }
+    100% { 
+        text-shadow: 
+            0 0 30px rgba(199, 110, 46, 0.8),
+            0 0 60px rgba(199, 110, 46, 0.5),
+            0 2px 12px rgba(0, 0, 0, 0.9);
+    }
+}
+
+.reservation-section h2::before {
+    content: '◆' !important;
+    position: absolute !important;
+    left: -80px !important;
+    top: 50% !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    color: #c76e2e !important;
+    font-size: 2rem !important;
+    text-shadow: 0 0 15px rgba(199, 110, 46, 0.8) !important;
+    animation: rotate-diamond 4s linear infinite !important;
+}
+
+.reservation-section h2::after {
+    content: '◆' !important;
+    position: absolute !important;
+    right: -80px !important;
+    top: 50% !important;
+    transform: translateY(-50%) rotate(45deg) !important;
+    color: #c76e2e !important;
+    font-size: 2rem !important;
+    text-shadow: 0 0 15px rgba(199, 110, 46, 0.8) !important;
+    animation: rotate-diamond 4s linear infinite reverse !important;
+}
+
+@keyframes rotate-diamond {
+    0% { transform: translateY(-50%) rotate(45deg); }
+    100% { transform: translateY(-50%) rotate(405deg); }
+}
+
+.reservation-section h2:before {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 200px !important;
+    height: 6px !important;
+    background: linear-gradient(90deg, 
+        transparent 0%, 
+        rgba(199, 110, 46, 0.3) 15%, 
+        #c76e2e 50%, 
+        rgba(199, 110, 46, 0.3) 85%, 
+        transparent 100%) !important;
+    border-radius: 3px !important;
+    box-shadow: 0 0 20px rgba(199, 110, 46, 0.6) !important;
+}
+
+/* Ultra Luxury Form Container */
+.reservation-form {
+    background: linear-gradient(145deg, #ffffff 0%, #fafafa 50%, #f5f5f5 100%) !important;
+    padding: 3rem !important;
+    margin: 0 !important;
+    border-radius: 25px !important;
+    box-shadow: 
+        0 30px 60px rgba(0, 0, 0, 0.3),
+        0 15px 30px rgba(0, 0, 0, 0.2),
+        inset 0 2px 0 rgba(255, 255, 255, 0.9),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.1) !important;
+    border: 2px solid transparent !important;
+    background-clip: padding-box !important;
+    position: relative !important;
+    backdrop-filter: blur(20px) !important;
+    overflow: hidden !important;
+}
+
+/* FORCE ZERO GAP BETWEEN TEXTAREA AND CONSENT - NUCLEAR OVERRIDE */
+.reservation-form .form-group.full-width:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.reservation-form .form-group.full-width + .consent-group {
+    margin-top: 0.75rem !important;
+}
+
+#specialRequests {
+    margin-bottom: 0 !important;
+}
+
+#specialRequests + * {
+    margin-top: 0.75rem !important;
+}
+
+/* ABSOLUTE FINAL NUCLEAR GAP ELIMINATOR */
+.reservation-section .reservation-form .form-group:has(#specialRequests) {
+    margin-bottom: 0 !important;
+}
+
+.reservation-section .reservation-form .consent-group {
+    margin-top: 0.5rem !important;
+    margin-bottom: 1.25rem !important;
+}
+
+/* Direct targeting of the specific elements */
+form#reservationForm .form-group.full-width:nth-last-child(2) {
+    margin-bottom: 0 !important;
+}
+
+form#reservationForm .consent-group {
+    margin-top: 0.5rem !important;
+}
+
+.reservation-form::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 8px !important;
+    background: linear-gradient(90deg, 
+        #1f4b3f 0%, 
+        #2a6b5a 25%, 
+        #c76e2e 50%, 
+        #2a6b5a 75%, 
+        #1f4b3f 100%) !important;
+    border-radius: 25px 25px 0 0 !important;
+    box-shadow: 0 2px 10px rgba(199, 110, 46, 0.5) !important;
+}
+
+.reservation-form::after {
+    content: '' !important;
+    position: absolute !important;
+    top: -50% !important;
+    left: -50% !important;
+    width: 200% !important;
+    height: 200% !important;
+    background: conic-gradient(from 0deg, transparent, rgba(199, 110, 46, 0.05), transparent) !important;
+    animation: form-rotate 20s linear infinite !important;
+    z-index: -1 !important;
+}
+
+@keyframes form-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Ultra Tight Form Layout - ZERO GAPS */
+.form-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem !important;
+    margin: 0 0 0.75rem 0 !important;
+    padding: 0 !important;
+}
+
+.form-group {
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ultra Professional Labels */
+.form-group label {
+    display: block !important;
+    margin: 0 0 0.25rem 0 !important;
+    padding: 0 !important;
+    color: #1f4b3f !important;
+    font-weight: 700 !important;
+    font-family: 'Cinzel', serif !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+}
+
+/* Ultra Professional Input Fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100% !important;
+    padding: 0.75rem 1rem !important;
+    margin: 0 !important;
+    border: 2px solid rgba(31, 75, 63, 0.2) !important;
+    border-radius: 8px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+    box-sizing: border-box !important;
+    min-height: 48px !important;
+    position: relative !important;
+    outline: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+.form-group select {
+    cursor: pointer !important;
+    appearance: none !important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path fill="%23c76e2e" d="M1 1l5 5 5-5"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    background-size: 12px !important;
+}
+
+.form-group textarea {
+    min-height: 100px !important;
+    max-height: 120px !important;
+    resize: vertical !important;
+    line-height: 1.5 !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+/* Focus and Hover Effects */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c76e2e !important;
+    box-shadow: 
+        0 0 0 3px rgba(199, 110, 46, 0.1),
+        0 4px 12px rgba(199, 110, 46, 0.15) !important;
+    background: #ffffff !important;
+    transform: translateY(-1px) !important;
+}
+
+.form-group input:hover:not(:focus),
+.form-group select:hover:not(:focus),
+.form-group textarea:hover:not(:focus) {
+    border-color: rgba(199, 110, 46, 0.4) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Full-width Fields - FORCE OVERRIDE */
+.reservation-form .form-group.full-width {
+    grid-column: 1 / -1 !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+}
+
+/* Beautiful Consent Section - FORCE OVERRIDE */
+.reservation-form .consent-group {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    margin: 0.5rem 0 1.25rem 0 !important;
+    padding: 1.25rem !important;
+    background: linear-gradient(135deg, rgba(31, 75, 63, 0.03) 0%, rgba(199, 110, 46, 0.02) 100%) !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(199, 110, 46, 0.1) !important;
+    position: relative !important;
+}
+
+.reservation-form .consent-group::before {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 3px !important;
+    background: linear-gradient(to bottom, #1f4b3f, #c76e2e) !important;
+    border-radius: 0 0 0 12px !important;
+}
+
+.reservation-form .consent-group input[type="checkbox"] {
+    width: 20px !important;
+    height: 20px !important;
+    accent-color: #c76e2e !important;
+    cursor: pointer !important;
+    margin-top: 2px !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.reservation-form .consent-group label {
+    color: #2c2c2c !important;
+    font-weight: 400 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    cursor: pointer !important;
+    font-family: 'Open Sans', sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ultra Professional Submit Button */
+.submit-btn {
+    width: 100% !important;
+    padding: 1.25rem 2rem !important;
+    margin: 0.5rem 0 0 0 !important;
+    background: linear-gradient(135deg, #1f4b3f 0%, #2a6b5a 30%, #c76e2e 70%, #1f4b3f 100%) !important;
+    color: #ffffff !important;
+    border: 3px solid transparent !important;
+    border-radius: 12px !important;
+    font-weight: 800 !important;
+    font-size: 1.1rem !important;
+    cursor: pointer !important;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-shadow: 
+        0 8px 20px rgba(31, 75, 63, 0.4),
+        0 4px 10px rgba(199, 110, 46, 0.3),
+        inset 0 2px 0 rgba(255, 255, 255, 0.2) !important;
+    min-height: 56px !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.submit-btn::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
+    transition: left 0.5s !important;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 15px 35px rgba(31, 75, 63, 0.45) !important;
+    background: linear-gradient(135deg, #1a3f35 0%, #236149 50%, #d47c3a 100%) !important;
+    letter-spacing: 2px !important;
+}
+
+.submit-btn:hover::before {
+    left: 100% !important;
+}
+
+.submit-btn:active {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 8px 20px rgba(31, 75, 63, 0.4) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-section {
+        padding: 3rem 1rem !important;
+    }
+    
+    .reservation-section h2 {
+        font-size: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .reservation-form {
+        padding: 2rem !important;
+        border-radius: 16px !important;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.875rem 1rem !important;
+        min-height: 48px !important;
+    }
+    
+    .reservation-form .consent-group {
+        padding: 1rem !important;
+        margin: 0.5rem 0 1.25rem 0 !important;
+    }
+    
+    .reservation-form .form-group.full-width + .consent-group {
+        margin-top: 0.5rem !important;
+    }
+    
+    .submit-btn {
+        padding: 1.25rem 1.5rem !important;
+        font-size: 1.05rem !important;
+        min-height: 56px !important;
+        letter-spacing: 1px !important;
+    }
+    
+    .reservation-section h2::before,
+    .reservation-section h2::after {
+        display: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-section {
+        padding: 2rem 0.5rem !important;
+    }
+    
+    .reservation-section h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    .reservation-form {
+        padding: 1.5rem !important;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.75rem !important;
+        min-height: 44px !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem !important;
+    }
+    
+    .consent-group label {
+        font-size: 0.85rem !important;
+    }
+    
+    .submit-btn {
+        padding: 1.125rem 1.25rem !important;
+        font-size: 1rem !important;
+        min-height: 52px !important;
+        letter-spacing: 0.5px !important;
+    }
+}
+
+/* Input Validation Styling */
+.form-group input:valid:not(:focus):not(:placeholder-shown) {
+    border-color: rgba(46, 160, 67, 0.5) !important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%232ea043" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    background-size: 16px !important;
+}
+
+.form-group input:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: rgba(220, 53, 69, 0.5) !important;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="%23dc3545" d="M8 15A7 7 0 118 1a7 7 0 010 14zM8 4a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 018 4zm0 8a1 1 0 100-2 1 1 0 000 2z"/></svg>') !important;
+    background-repeat: no-repeat !important;
+    background-position: right 1rem center !important;
+    background-size: 16px !important;
+}
+
+/* Success Message */
+.success-message {
+    background: linear-gradient(135deg, rgba(46, 160, 67, 0.1) 0%, rgba(46, 160, 67, 0.05) 100%) !important;
+    color: #2ea043 !important;
+    padding: 1rem 1.5rem !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(46, 160, 67, 0.2) !important;
+    margin-top: 1rem !important;
+    font-weight: 500 !important;
+    text-align: center !important;
+    opacity: 0 !important;
+    transform: translateY(10px) !important;
+    transition: all 0.3s ease !important;
+}
+
+.success-message.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+} 

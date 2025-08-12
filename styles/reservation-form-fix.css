@@ -1,0 +1,407 @@
+/* RESERVATION FORM - NO GAPS MAXIMUM OVERRIDE */
+
+.reservation-section {
+    background: linear-gradient(135deg, #f8f5f2 0%, #f0ebe5 100%) !important;
+    padding: 1.5rem 0.5rem !important;
+    position: relative !important;
+}
+
+.reservation-section::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="1" fill="rgba(31, 75, 63, 0.03)"/></svg>') !important;
+    background-repeat: repeat !important;
+    opacity: 0.5 !important;
+}
+
+.reservation-section .container {
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.reservation-section h2 {
+    color: #1f4b3f !important;
+    text-align: center !important;
+    margin-bottom: 0.75rem !important;
+    margin-top: 0 !important;
+    font-size: 1.8rem !important;
+    font-family: 'Cinzel', serif !important;
+    position: relative !important;
+}
+
+.reservation-section h2::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -4px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 40px !important;
+    height: 1px !important;
+    background: linear-gradient(to right, #1f4b3f, #c76e2e) !important;
+}
+
+/* Form Container - ZERO GAP DESIGN */
+.reservation-form {
+    background-color: #fcfaf7 !important;
+    padding: 1rem !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.04) !important;
+    border: 1px solid rgba(199, 110, 46, 0.15) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+}
+
+.reservation-form::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: linear-gradient(to right, #1f4b3f, #c76e2e) !important;
+}
+
+/* FORM LAYOUT - ZERO GAPS ABSOLUTE OVERRIDE */
+.form-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+.form-group label {
+    display: block !important;
+    margin-bottom: 0.15rem !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    color: #1f4b3f !important;
+    font-weight: 600 !important;
+    font-family: 'Cinzel', serif !important;
+    font-size: 0.8rem !important;
+    letter-spacing: 0.05px !important;
+    line-height: 1.2 !important;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100% !important;
+    padding: 0.5rem 0.625rem !important;
+    border: 1px solid rgba(199, 110, 46, 0.3) !important;
+    border-radius: 4px !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 0.85rem !important;
+    transition: all 0.1s ease !important;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    color: #2c2c2c !important;
+    box-sizing: border-box !important;
+    height: 36px !important;
+    margin: 0 !important;
+}
+
+.form-group select {
+    cursor: pointer !important;
+}
+
+.form-group textarea {
+    height: auto !important;
+    min-height: 50px !important;
+    resize: vertical !important;
+    line-height: 1.25 !important;
+    padding: 0.5rem 0.625rem !important;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c76e2e !important;
+    outline: none !important;
+    box-shadow: 0 0 0 1px rgba(199, 110, 46, 0.08) !important;
+    background-color: #ffffff !important;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    border-color: rgba(199, 110, 46, 0.5) !important;
+}
+
+/* Full-width form groups - ZERO MARGIN */
+.form-group.full-width {
+    grid-column: 1 / -1 !important;
+    margin-bottom: 0.5rem !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+}
+
+/* CONSENT GROUP - NO GAPS */
+.consent-group {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 0.375rem !important;
+    margin: 0.5rem 0 0.375rem 0 !important;
+    padding: 0.5rem !important;
+    background-color: rgba(31, 75, 63, 0.02) !important;
+    border-radius: 3px !important;
+    border-left: 1px solid #c76e2e !important;
+}
+
+.consent-group input[type="checkbox"] {
+    margin-top: 0.025rem !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    flex-shrink: 0 !important;
+    width: 12px !important;
+    height: 12px !important;
+    accent-color: #c76e2e !important;
+    cursor: pointer !important;
+}
+
+.consent-group label {
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #2c2c2c !important;
+    font-weight: 400 !important;
+    font-size: 0.75rem !important;
+    line-height: 1.25 !important;
+    cursor: pointer !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+/* SUBMIT BUTTON - MINIMAL HEIGHT */
+.submit-btn {
+    width: 100% !important;
+    padding: 0.625rem 1rem !important;
+    background: linear-gradient(135deg, #1f4b3f 0%, #c76e2e 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    cursor: pointer !important;
+    transition: all 0.1s ease !important;
+    font-family: 'Cinzel', serif !important;
+    letter-spacing: 0.2px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    margin-top: 0.075rem !important;
+    margin-bottom: 0 !important;
+    height: 40px !important;
+}
+
+.submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(31, 75, 63, 0.25);
+}
+
+.submit-btn:hover::before {
+    left: 100%;
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* RESPONSIVE DESIGN - ABSOLUTE MINIMAL GAPS */
+@media (max-width: 768px) {
+    .reservation-section {
+        padding: 1.25rem 0.5rem !important;
+    }
+    
+    .reservation-section h2 {
+        font-size: 1.6rem !important;
+        margin-bottom: 0.625rem !important;
+    }
+    
+    .reservation-form {
+        padding: 0.875rem !important;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr !important;
+        gap: 0.375rem !important;
+        margin-bottom: 0.375rem !important;
+    }
+    
+    .form-group {
+        margin-bottom: 0.375rem !important;
+    }
+    
+    .form-group.full-width {
+        margin-bottom: 0.375rem !important;
+    }
+    
+    .form-group label {
+        margin-bottom: 0.1rem !important;
+    }
+    
+    .consent-group {
+        margin: 0.375rem 0 0.25rem 0 !important;
+        padding: 0.375rem !important;
+    }
+    
+    .submit-btn {
+        padding: 0.575rem 0.875rem !important;
+        font-size: 0.85rem !important;
+        height: 36px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-section {
+        padding: 1rem 0.375rem !important;
+    }
+    
+    .reservation-section h2 {
+        font-size: 1.4rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .reservation-form {
+        padding: 0.75rem !important;
+    }
+    
+    .form-row {
+        gap: 0.25rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .form-group {
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .form-group.full-width {
+        margin-bottom: 0.25rem !important;
+    }
+    
+    .form-group label {
+        font-size: 0.75rem !important;
+        margin-bottom: 0.075rem !important;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.45rem 0.55rem !important;
+        font-size: 0.8rem !important;
+        height: 32px !important;
+    }
+    
+    .form-group textarea {
+        height: auto !important;
+        min-height: 40px !important;
+    }
+    
+    .consent-group {
+        padding: 0.375rem !important;
+        margin: 0.25rem 0 0.2rem 0 !important;
+    }
+    
+    .consent-group label {
+        font-size: 0.7rem !important;
+    }
+    
+    .submit-btn {
+        padding: 0.525rem 0.75rem !important;
+        font-size: 0.8rem !important;
+        height: 34px !important;
+        margin-top: 0.05rem !important;
+    }
+}
+
+/* Form Validation & Enhancement Styles */
+.form-group input:invalid:not(:focus):not(:placeholder-shown),
+.form-group select:invalid:not(:focus) {
+    border-color: #e74c3c;
+    background-color: rgba(231, 76, 60, 0.03);
+}
+
+.form-group input:valid:not(:focus):not(:placeholder-shown),
+.form-group select:valid:not(:focus) {
+    border-color: rgba(39, 174, 96, 0.6);
+}
+
+/* Enhanced field styling */
+.form-group input[type="date"]::-webkit-calendar-picker-indicator {
+    color: #c76e2e;
+    cursor: pointer;
+}
+
+.form-group select option {
+    padding: 0.5rem;
+    background-color: #ffffff;
+    color: #2c2c2c;
+}
+
+/* Field focus improvements */
+.form-group input:focus::placeholder,
+.form-group textarea:focus::placeholder {
+    color: rgba(199, 110, 46, 0.5);
+    font-style: italic;
+}
+
+/* Loading state for submit button */
+.submit-btn:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submit-btn:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+/* Success message styling */
+.success-message {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.success-message.show {
+    display: block;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
