@@ -77,6 +77,7 @@
     <link rel="stylesheet" href="styles/reservation-beautiful-fix.css">
     <link rel="stylesheet" href="styles/footer-professional-fix.css">
     <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="styles/cookie-consent.css">
     
     <!-- Email handling moved to backend SendGrid -->
 </head>
@@ -895,12 +896,64 @@
         </div>
     </footer>
 
+    <!-- Cookie Consent Banner -->
+    <div id="cookieConsent" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h4>🍪 Cookie Notice</h4>
+                <p>We use cookies to ensure you get the best experience on our website. This includes essential cookies for authentication and reservation management.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button onclick="acceptCookies()" class="cookie-accept">Accept All</button>
+                <button onclick="declineCookies()" class="cookie-decline">Decline</button>
+                <a href="#" onclick="showCookieDetails()" class="cookie-learn-more">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Details Modal -->
+    <div id="cookieModal" class="cookie-modal">
+        <div class="cookie-modal-content">
+            <span class="cookie-modal-close" onclick="closeCookieModal()">&times;</span>
+            <h3>🍪 Cookie Policy</h3>
+            <div class="cookie-types">
+                <div class="cookie-type">
+                    <h4>Essential Cookies (Required)</h4>
+                    <p>These cookies are necessary for the website to function properly. They enable basic functions like page navigation, access to secure areas, and user authentication for reservations.</p>
+                    <ul>
+                        <li><strong>Authentication cookies:</strong> Remember your login status</li>
+                        <li><strong>Session cookies:</strong> Maintain your session while using the site</li>
+                        <li><strong>Reservation cookies:</strong> Store your booking information</li>
+                    </ul>
+                </div>
+                <div class="cookie-type">
+                    <h4>How We Use Cookies</h4>
+                    <p>We use cookies to:</p>
+                    <ul>
+                        <li>Keep you signed in when making reservations</li>
+                        <li>Remember your preferences and settings</li>
+                        <li>Provide secure access to admin features</li>
+                        <li>Improve website functionality and user experience</li>
+                    </ul>
+                </div>
+                <div class="cookie-type">
+                    <h4>Your Cookie Choices</h4>
+                    <p>You can control cookies through your browser settings. However, disabling essential cookies may prevent some features from working properly.</p>
+                </div>
+            </div>
+            <div class="cookie-modal-buttons">
+                <button onclick="acceptCookies()" class="cookie-accept">Accept All Cookies</button>
+                <button onclick="closeCookieModal()" class="cookie-close">Close</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Scripts -->
     <script src="js/static-auth.js?v=4"></script>
-
-            <script src="js/main.js?v=4"></script>
+    <script src="js/main.js?v=4"></script>
     <script src="js/reservations.js"></script>
     <script src="js/menu-organized.js"></script>
     <script src="js/gallery.js"></script>
+    <script src="js/cookie-consent.js"></script>
 </body>
 </html> 
