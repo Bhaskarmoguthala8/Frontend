@@ -2,7 +2,7 @@
 // NOTE: Form submission is handled in main.js to avoid conflicts
 
 // Using backend API with bearer auth
-window.API_BASE = window.API_BASE || 'http://127.0.0.1:8000';
+window.API_BASE = window.API_BASE || 'https://reservations-backend-m4yb.onrender.com';
 let reservations = [];
 
 // Function to load reservations from API
