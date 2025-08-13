@@ -150,7 +150,7 @@ function formatDateTime(date, time) {
 }
 
 // Backend API base URL (singleton)
-window.API_BASE = window.API_BASE || 'http://127.0.0.1:8000';
+window.API_BASE = window.API_BASE || 'https://reservations-backend-m4yb.onrender.com';
 
 // --------------- Security helpers ---------------
 if (!window.escapeHtml) {
