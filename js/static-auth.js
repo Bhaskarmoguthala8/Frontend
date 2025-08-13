@@ -5,7 +5,7 @@ console.log('🚀 STATIC-AUTH.JS LOADING - VERSION 4');
 console.log('Loading authentication system...');
 
 // Backend API base URL (define once globally)
-window.API_BASE = window.API_BASE || 'http://127.0.0.1:8000';
+wwindow.API_BASE = window.API_BASE || 'https://reservations-backend-m4yb.onrender.com';
 
 let authToken = null;
 
