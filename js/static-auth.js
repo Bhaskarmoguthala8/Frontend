@@ -1,6 +1,7 @@
 // Authentication System - Integrated with Backend API
 // This provides login functionality that connects to the backend
 
+console.log('🚀 STATIC-AUTH.JS LOADING - VERSION 4');
 console.log('Loading authentication system...');
 
 // Backend API base URL (define once globally)
@@ -12,10 +13,14 @@ let currentUser = null;
 
 // Show login modal
 function showLoginModal() {
+    console.log('🚨 showLoginModal() called - this should not happen automatically!');
+    console.log('🚨 Stack trace:', new Error().stack);
+    
     const modal = document.getElementById('loginModal');
     if (modal) {
         modal.style.display = 'flex';
         document.getElementById('loginEmail').focus();
+        console.log('🚨 Login modal is now visible');
     }
 }
 
@@ -205,18 +210,29 @@ function getAuthToken() {
 
 // Restore token on load (if present)
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('🔍 DOM Content Loaded - Checking authentication...');
     const existing = getAuthToken();
+    console.log('🔍 Auth token found:', !!existing);
+    
     if (existing) {
+        console.log('✅ User is authenticated, showing admin features');
         showLoggedInState();
         showManagementSection();
         if (window.reservationAdmin && typeof window.reservationAdmin.updateReservationsList === 'function') {
             window.reservationAdmin.updateReservationsList();
         }
     } else {
-        // No token: prompt login without altering UI styles
-        if (typeof showLoginModal === 'function') {
-            showLoginModal();
-        }
+        console.log('❌ No token found, showing main website (no login modal)');
+        // No token: show main website by default, don't force login
+        showLoggedOutState();
+        hideManagementSection();
+    }
+    
+    // Debug: Check if login modal is visible
+    const loginModal = document.getElementById('loginModal');
+    if (loginModal) {
+        console.log('🔍 Login modal display style:', loginModal.style.display);
+        console.log('🔍 Login modal computed display:', window.getComputedStyle(loginModal).display);
     }
 });
 
